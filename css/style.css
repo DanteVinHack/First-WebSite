@@ -271,7 +271,7 @@ h6 {
     100% {
         height: 0px;
         opacity: 0;
-        
+
         padding-top: 0;
         padding-bottom: 0;
     }
@@ -428,23 +428,29 @@ h6 {
     margin-top: 20px;
 }
 
-.footer__link {
+.footer__menu {
     display: flex;
     margin-bottom: 27px;
     background-color: transparent;
 }
 
-.link {
+.footer__link {
     margin-left: 34px;
-    transition: transform 0.2s;
+    transition: transform 0.2s linear;
 }
 
-.link:first-child {
+.footer__link:first-child {
     margin-left: 0px;
 }
 
-.link:hover {
-    transform: scale(1.2);
+.footer__link > svg {
+    fill: #21243D;
+    transition: all .2s linear;
+}
+
+.footer__link:hover > svg {
+    fill: royalblue;
+    transform: scale(1.1);
 }
 
 .footer__text {
